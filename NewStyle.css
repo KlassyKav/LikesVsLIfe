@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Truculenta", sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px
+}
+.nav-links {
+    flex: 1;
+    text-align: right; 
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #add8e6;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li :hover::after{
+    width: 100%
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 65px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 23px;
+    color: #fff;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+    font-size: 22px;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+    .nav-links ul li{
+        display: block
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -277px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px; 
+        cursor: pointer; 
+        
+    }
+    .nav-links{
+        padding: 30px; 
+    }
+}
+
+
+
+
+
+
+/*------Teen veiws on social media------*/
+
+.Quotes{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;    
+    text-align:center; 
+}
+.Views{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #e3f2fd;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.Views img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+    
+.Views p{
+    padding: 0;
+}
+
+.Views h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+@media (max-width: 700px){
+    .Views img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/*------Call to action------*/
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+
+/*------Mission Statement------*/
+.Statement{
+    width: 100%;
+    text-align:center;
+    padding: 30px 0;
+    
+}
+
+.Statement h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.Statement p{
+    font-size: 15px;
+    margin-top: 0.02%;
+}
+
+
+/*----PROS VS. CONS-----*/
+
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner2.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+    font-size: 72px;
+}
+
+
+
+
+.contrast{
+    flex-basis: 48%;
+    padding 30px 2px;
+}
+
+.contrast img{
+    width: 100%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.contrast h1{
+    padding-top: 0;
+    font-size: 35px;
+}
+
+.contrast p{
+    padding: 15px 0 25px;
+    font-size: 20px;
+}
+
+.contrast h2{
+    padding-top: 0;
+    font-size: 35px;
+}
+
+.contrast p{
+    padding: 15px 0 25px;
+    font-size: 20px;
+}
+
+@media(max-width: 700px){
+    .sub-header h1{
+        font-size: 30px;
+    }
+    .contrast h1{
+        font-size:25px;
+    }
+    .contrast h2{
+        font-size:25px;
+    }
+    .contrast p{
+        font-size: 18px;
+    }
+}
+
+
+.purpose{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+
+.purpose h1{
+    font-size: 35px;
+}
+.purpose p{
+    font-size: 22px;
+}
+.contrast{
+    flex-basis: 45%;
+    border-radius: 1px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.contrast img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.contrast p{
+    font-size: 20px;
+}
+.contrast h3{
+    font-size: 34px;
+}
+.contrast h4{
+    font-size: 22px;
+}
+
+@media(max-width: 700px){
+    .sub-header h1{
+        font-size: 30px;
+    }
+    .purpose h1{
+        font-size: 25px;
+    }
+}
+
+/*------IMPACT ON TEENS PAGE------*/
+
+.impact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; 
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px; 
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Shaping{
+    flex-basis: 19%;
+    background: #EFFBFF;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h2{
+    font-size: 32px;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.Shaping:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:700px){
+    .sub-header h1{
+        font-size: 32px;
+    }
+}
+
+
+/*------SURVEYS AND STATS PAGE------*/
+
+.stats{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.survey{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.survey img{
+    width: 100%;
+    display:block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width:100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(0,47,155,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+
+}
+
+.layer p{
+    width: 100%;
+    font-weight: 250;
+    color:#fff;
+    font-size: 18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+
+}
+
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer:hover p{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row */
+    justify-content: space-between; /* Distribute columns evenly */
+}
+
+
+@media (max-width: 700px){
+    .sub-header h1{
+        font-size: 29px;
+    }
+    .stats h1{
+        font-size: 24px;
+    }
+}
+
+/*------SELF PROTECTION PAGE------*/
+
+.protect{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.surf{
+    flex-basis: 38%;
+    border-radius: 1px;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+.surf img{
+    width: 100%;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media(max-width: 700px){
+    .sub-header h1{
+        font-size: 30px;
+    }
+    .protect h1{
+        font-size: 25px;
+    }
+}
+
+/*------RECOVERY PAGE------*/
+
+.recover {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.recover-left {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+
+.recover-left img {
+    width: 50%;
+    padding-left: 0; /* Remove padding */
+}
+
+.recover-left h2 {
+    color: black;
+    font-weight: 600;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.recover-left h3 {
+    padding-left: 0; /* Remove padding */
+}
+
+@media (max-width: 700px) {
+    .sub-header h1 {
+        font-size: 30px;
+    }
+    .recover-left h2 {
+        font-size: 25px;
+    }
+}
+
+
+/*------BENEFICIAL SOCIAL MEDIA USAGE PAGE------*/
+
+/*.benefits {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.advantage {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    text-align: center
+    
+}
+
+.advantage img {
+    width: 100%;
+    border-radius: 10px;
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+.advantage p {
+    margin-top: 10px; /* Add some spacing between image and text
+}*/
+
+.benefits {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.advantage {
+    display: block; /* Ensures blocks stack properly */
+    text-align: center; /* Centers text inside each block */
+    margin: 20px auto; /* Centers each block and adds spacing */
+    width: fit-content; /* Shrinks the block to fit its content */
+}
+
+.advantage img {
+    display: block; /* Treats the image as a block element */
+    margin: 0 auto; /* Horizontally centers the image */
+    border-radius: 10px;
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+
+/*.advantage h1{
+    padding-top: 0;
+    font-size: 45px;
+}
+
+.advantage p{
+    padding: 15px 0 25px;
+    font-size: 23px;
+}--*/
+
+@media(max-width: 700px){
+    .sub-header h1{
+        font-size: 30px;
+    }
+    .advantage h1{
+        font-size:25px;
+    }   
+    .advantage p{
+        font-size: 18px;
+    }
+}
+
+
+
+/*---.protect{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.surf{
+    flex-basis: 22%;
+    border-radius: 1px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.surf img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media(max-width: 700px){
+    .sub-header h1{
+        font-size: 30px;
+    }
+    .protect h1{
+        font-size: 25px;
+    }
+}-->
+
+
+
+
+
+/*------WORKS CITED PAGE------*/
+
+.sources{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.sources h2{
+    font-size: 35px;
+}
+.sources p{
+    font-size: 23px;
+}
+
+
+
